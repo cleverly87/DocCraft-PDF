@@ -1,0 +1,54 @@
+pdf-engine: xelatex
+
+# Metadata
+variables:
+  documentclass: article
+  papersize: a4
+  fontsize: 11pt
+  geometry: margin=1in
+  colorlinks: true
+  linkcolor: blue
+  urlcolor: blue
+  
+# Table of Contents
+table-of-contents: true
+toc-depth: 3
+number-sections: true
+
+# Typography
+mainfont: Arial
+sansfont: Arial
+monofont: Courier New
+
+# Include template customizations
+include-in-header:
+  - templates/brand-header.tex
+
+# PDF output settings
+pdf-engine-opts:
+  - --pdf-engine=xelatex
+  
+# Input/Output format
+from: markdown+smart+yaml_metadata_block
+to: pdf
+
+# Extensions
+markdown-extensions:
+  - pipe_tables
+  - grid_tables
+  - fenced_code_blocks
+  - fenced_code_attributes
+  - backtick_code_blocks
+  - definition_lists
+  - footnotes
+  - smart
+
+# Filters and processing
+standalone: true
+self-contained: false
+
+# Highlighting (syntax highlighting for code blocks)
+highlight-style: tango
+
+# Strip comments
+strip-comments: true

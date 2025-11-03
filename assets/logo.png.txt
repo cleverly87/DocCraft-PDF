@@ -1,0 +1,7 @@
+# Placeholder Logo
+
+This is a placeholder for your company logo.
+
+Replace this file with your actual logo image (PNG, JPG, or SVG).
+
+Recommended size: 300x100 pixels or similar aspect ratio.
